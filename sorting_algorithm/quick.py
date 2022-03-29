@@ -22,8 +22,13 @@ def quickSort(arr,low,high):
         
         quickSort(arr,pi+1,high)
 
-unsort= [random.randint(1,50) for i in range(50)]
+unsort= []
+n= int(input("Enter number of elements :"))
+for i in range(0,n):
+    ele=int(input())
+    unsort.append(ele)
+
 print(unsort)
-quickSort(unsort,0,49)
+quickSort(unsort,0,n-1)
 print(unsort)
         
